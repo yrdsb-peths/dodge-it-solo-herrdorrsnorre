@@ -33,14 +33,18 @@ public class banana extends Actor
     public void resetBanana() 
     {
         int num = Greenfoot.getRandomNumber(2); 
+        int increaseTrue = Greenfoot.getRandomNumber(4); 
         if (num == 0) 
         {
             setLocation(600, 100);
-            increase++;
         }
         else 
         {
             setLocation(600, 300);
+            
+        }
+        if (increaseTrue == 0) 
+        {
             increase++;
         }
     }
